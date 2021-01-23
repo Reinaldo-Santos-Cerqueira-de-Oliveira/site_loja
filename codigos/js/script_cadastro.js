@@ -86,5 +86,4 @@ document.querySelector("form")
     console.log("enviar o formulário")
 
     // não vai enviar o formulário
-    event.preventDefault()
 })
