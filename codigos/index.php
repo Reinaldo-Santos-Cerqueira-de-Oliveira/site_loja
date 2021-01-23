@@ -1,4 +1,22 @@
 <?php require_once("../conexao/conexao.php");?>
+<?php
+  if(isset($_POST["email"])){
+    $email = $_POST["email"];
+    $senha = $_POST["senha"];
+    
+    $login = "SELECT * FROM clientes WHERE email = '{$email}' and senha = '{$senha}' ";
+    $acesso     =   mysqli_query($conecta, $login);
+    if( !$acesso){
+        die("falha na consulta ao banco");
+    }
+    $informacao = mysqli_fetch_assoc($acesso);
+    if( empty($informacao) ) {
+        $mensagem   = "Login  sem sucesso";
+    }else{  
+        header("location:produtos.php");
+    }
+  }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,19 +35,19 @@
   <script src="js/script.js" defer></script>
 </head>
 <body>
-  <form action="">
+  <form action="index.php" method="post">
     <img src="images/6ba9b497-0ee8-4fe5-945e-ea2f45e6db93_200x200 (1).png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;">
     <h2 style="text-align: center;">
       Sign In
     </h2>
     <div class="input">
-      <input required type="email"/>
-      <label style>Email</label>
+      <input required name="email" id="email" type="email" autocomplete="off"/>
+      <label for="email">Email</label>
       <span class="error"></span>
     </div>
     <div class="input">
-      <input required type="password" minlength="6" maxlength="10"/>
-      <label style>Senha</label>
+      <input required type="password" name="senha" id="senha" minlength="6" maxlength="10" id="senha" autocomplete="off"/>
+      <label for="senha">Senha</label>
       <span class="error"></span>
     </div>
     <button type="submit">Sign in</button>
