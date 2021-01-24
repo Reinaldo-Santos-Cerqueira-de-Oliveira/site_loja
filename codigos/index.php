@@ -38,7 +38,7 @@
   <form action="index.php" method="post">
     <img src="images/6ba9b497-0ee8-4fe5-945e-ea2f45e6db93_200x200 (1).png" alt="" style="height: 100%; width: 100%; max-width: 200px; max-height: 200px; margin-left: auto; margin-right: auto;">
     <h2 style="text-align: center;">
-      Sign In
+      Login clientes
     </h2>
     <div class="input">
       <input required name="email" id="email" type="email" autocomplete="off"/>
@@ -50,10 +50,12 @@
       <label for="senha">Senha</label>
       <span class="error"></span>
     </div>
+    <h6 style="text-align:end">Login de vendedor?<a href="login_vendedor.php">Clique aqui</a></h6>
     <button type="submit">Sign in</button>
     <div class="social-icons">
       <div class="social_icon">
-        <h6> Ainda não possui conta?<a href="cadastro.php">Clique aqui</a></h6>
+        <h6> Cadastro para clientes?<a href="cadastro.php">Clique aqui</a></h6>
+        <h6> Cadastro para vendedor?<a href="cadastro_vendedor.php">Clique aqui</a></h6>
         <h6>Ou escolha alguma dessas redes socias</h6>
         <span><a href=""><i class="fab fa-facebook-square"></i></a></span>
         <span><a href=""><i class="fab fa-google-plus-square"></i></a></span>
