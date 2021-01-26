@@ -19,7 +19,7 @@ function ValidateField(field) {
         const messages = {
             text:{
                 valueMissing: "Nome obrigatório"
-                ,tooShort:  "Digite seu nome completo"
+                ,tooShort:  "Digite seu nome completo",
             },
             email: {
                 valueMissing: "Email é obrigatório",

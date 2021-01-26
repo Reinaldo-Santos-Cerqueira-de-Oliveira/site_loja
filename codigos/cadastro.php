@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts google-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
-  <script src="js/script_cadastro.js" defer></script>
+  <script src="js/script_login.js" defer></script>
 </head>
 
 <body>

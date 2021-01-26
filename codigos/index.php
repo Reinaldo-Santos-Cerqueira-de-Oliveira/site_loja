@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts google-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap">
-  <script src="js/script.js" defer></script>
+  <script src="js/script_cadastro.js" defer></script>
 </head>
 <body>
   <form action="index.php" method="post">
@@ -46,16 +46,14 @@
       <span class="error"></span>
     </div>
     <div class="input">
-      <input required type="password" name="senha" id="senha" minlength="6" maxlength="10" id="senha" autocomplete="off"/>
+    <input required type="password" name="senha" id="senha" minlength="6" maxlength="10" id="senha" autocomplete="off"/>
       <label for="senha">Senha</label>
       <span class="error"></span>
     </div>
-    <h6 style="text-align:end">Login de vendedor?<a href="login_vendedor.php">Clique aqui</a></h6>
     <button type="submit">Sign in</button>
     <div class="social-icons">
       <div class="social_icon">
-        <h6> Cadastro para clientes?<a href="cadastro.php">Clique aqui</a></h6>
-        <h6> Cadastro para vendedor?<a href="cadastro_vendedor.php">Clique aqui</a></h6>
+        <h6> Não tem conta?<a href="cadastro.php">Clique aqui</a></h6>
         <h6>Ou escolha alguma dessas redes socias</h6>
         <span><a href=""><i class="fab fa-facebook-square"></i></a></span>
         <span><a href=""><i class="fab fa-google-plus-square"></i></a></span>
